@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+      <!-- Always force latest IE rendering engine or request Chrome Frame -->
+      <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+      <!-- Use title if it's in the page YAML frontmatter -->
+      <!-- %title= data.page.title || "The Middleman" -->
+      <!-- this currently gives an error and outputs the last post -->
+      <title>crushandcreate</title>
+      <meta content='width=device-width' name='viewport'>
+      <link href="/assets/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+      <link href='/blog-bricks/feed.xml' rel='alternate' type='application/rss+xml'>
+    </meta>
+  </head>
+  <body class='feed'>
+    <nav>
+      <ul>
+        <li>
+          <a href='/'>
+            <img id='logo' src='/content/images/avatar.jpg'>
+          </a>
+        </li>
+        <li>
+          <a href='/'>Crush and Create</a>.
+          A blog by
+          <a href='http://filtercake.com'>filtercake</a>.
+        </li>
+        <br>
+        <li>
+          <a href='/pages/about.html'>
+            About
+          </a>
+        </li>
+        <!-- \| -->
+        <!-- %li -->
+        <!-- %a{ :href => '/pages/archive.html'} archive -->
+      </ul>
+    </nav>
+    <div id='navspacer'></div>
+    <div class='content'>
+      <?xml version="1.0" encoding="UTF-8"?>
+      <feed xmlns="http://www.w3.org/2005/Atom">
+        <title>Crush and Create</title>
+        <subtitle>A blog by filtercake</subtitle>
+        <id>http://crushandcreate.com/</id>
+        <link href="http://crushandcreate.com/"/>
+        <link href="/feed.xml" rel="self"/>
+        <updated>2013-05-12T14:33:00Z</updated>
+        <author>
+          <name>filtercake</name>
+        </author>
+        <entry>
+          <title>Why I am not programming since I was 9</title>
+          <link rel="alternate" href="/2013/05/12/why-i-am-not-programming-since-i-was-9.html"/>
+          <id>/2013/05/12/why-i-am-not-programming-since-i-was-9.html</id>
+          <published>2013-05-12T14:33:00Z</published>
+          <updated>2013-05-12T14:33:00Z</updated>
+          <author>
+            <name>filtercake</name>
+          </author>
+          <content type="html">&lt;p&gt;When I was 9 – no, I did &lt;em&gt;not&lt;/em&gt; get my first C64. Instead we had a Mac at home. The &lt;a href="https://en.wikipedia.org/wiki/Macintosh_Plus"&gt;Mac Plus&lt;/a&gt; I had spent my initiation with had been replaced with a &lt;a href="https://en.wikipedia.org/wiki/Power_Macintosh_7100"&gt;PowerMac 7100/66&lt;/a&gt;. I dabbled around in Illustrator and made crappy icons. &lt;/p&gt;
+      
+      &lt;p&gt;On the Mac Plus I had done some stuff with &lt;a href="https://encrypted.google.com/search?tbm=isch&amp;q=hypercard"&gt;Hypercard&lt;/a&gt;. I cannot excatly remember what I worked on – but I specifically remember designing forms for some kind of database. And I wrote &lt;em&gt;functions&lt;/em&gt;. Whoa.&lt;/p&gt;
+      
+      &lt;p&gt;Hypercard was fun. It made you create stuff. There was no internet around to download new stacks back then. A couple of examples and a reference on how to do stuff and that was it.&lt;/p&gt;
+      
+      &lt;p&gt;All things were objects with their unique ID: each card, each button, each graphic. Things could animate if I remember correctly. There were &lt;code&gt;mouseDown&lt;/code&gt;, &lt;code&gt;mouseUp&lt;/code&gt;  and &lt;code&gt;mouseOver&lt;/code&gt; events.&lt;/p&gt;
+      
+      &lt;p&gt;However, my Dad brought home the Macworld each month. While Macworld was not so much an programming publication, there were ads in there for the &lt;a href="https://en.wikipedia.org/wiki/CodeWarrior"&gt;Metrowerks CodeWarrior&lt;/a&gt;:&lt;/p&gt;
+      
+      &lt;blockquote&gt;
+      &lt;p&gt;CodeWarrior was a key factor in the success of Apple&amp;#39;s transition of its machine architecture from 68K processors to PowerPC because it provided a complete, solid PowerPC compiler when the competition (Apple&amp;#39;s MPW tools and Symantec C++) was mostly incomplete. Metrowerks also made it easy to generate fat binaries which included both 68K and PowerPC code.&lt;/p&gt;
+      &lt;/blockquote&gt;
+      
+      &lt;p&gt;I talked a couple of times with my dad about CodeWarrior. And then it came. The day that would set me on the path for the next 20 years:&lt;/p&gt;
+      
+      &lt;p&gt;I asked: &amp;ldquo;Dad, can I have a CodeWarrior?&amp;rdquo;&lt;br&gt;
+      &amp;ldquo;For what?&amp;rdquo; he asked.&lt;br&gt;
+      &amp;ldquo;Well,&amp;rdquo; I answered, &amp;ldquo;to program.&amp;rdquo;&lt;br&gt;
+      &amp;ldquo;What do you want to program?&amp;rdquo;&lt;br&gt;
+      &amp;ldquo;I don&amp;#39;t know yet.&amp;rdquo;&lt;br&gt;
+      &amp;ldquo;Well, when you know, ask again and we will see.&amp;rdquo;  &lt;/p&gt;
+      
+      &lt;p&gt;And that was the end of my coding career right there.&lt;/p&gt;
+      
+      &lt;p&gt;Don&amp;#39;t worry, Dad, though. I do not hold any grudges – I know you always did everything with the best intentions. I love you.&lt;/p&gt;
+      
+      &lt;p&gt;But ever since I got back in monospace land, I cannot help but think about that very moment every couple of months. Just for a minute. And for that minute, the question &amp;ldquo;what if&amp;rdquo; is burning.&lt;/p&gt;
+      
+      &lt;p&gt;I mean, if a kid wants pens and paper, you do not ask her/him what he/she is planning to draw, right?&lt;/p&gt;
+      
+      &lt;p&gt;Being a dad myself now, there is only one lesson to learn:  whatever your kids want to do in terms of making, creating, learning: say yes first, ask questions later!&lt;/p&gt;
+      </content>
+        </entry>
+        <entry>
+          <title>Kindle Paperwhite review</title>
+          <link rel="alternate" href="/2013/04/01/kindle-paperwhite-review-freeing-your-ebooks-from-drm-and-freeing-yourself-from-the-kindle-store.html"/>
+          <id>/2013/04/01/kindle-paperwhite-review-freeing-your-ebooks-from-drm-and-freeing-yourself-from-the-kindle-store.html</id>
+          <published>2013-04-01T10:44:00Z</published>
+          <updated>2013-04-01T10:44:00Z</updated>
+          <author>
+            <name>filtercake</name>
+          </author>
+          <content type="html">&lt;p&gt;(This is not a good read, but I spent so much time on trying to make it sound &lt;em&gt;important&lt;/em&gt;, that I cannot delete it.)&lt;/p&gt;
+      
+      &lt;p&gt;The &lt;a href="http://www.amazon.de/gp/product/B007OZO03M/"&gt;Paperwhite&lt;/a&gt; is my first Kindle. Actually, I had never really tried &lt;em&gt;any&lt;/em&gt; eReader, mostly due to&lt;/p&gt;
+      
+      &lt;ul&gt;
+      &lt;li&gt;being uninitiated and &lt;/li&gt;
+      &lt;li&gt;appalled by the DRM that surrounds eBooks&lt;/li&gt;
+      &lt;/ul&gt;
+      
+      &lt;p&gt;The other reason was that, on average, consumer electronics hardware is cheap crap, built to fall apart as soon as the next season arrives. Looking at older models of the kindle, I had always kind of put it in that corner.&lt;/p&gt;
+      
+      &lt;h3&gt;The Hardware&lt;/h3&gt;
+      
+      &lt;p&gt;The device feels great and as is very light in comparison to an LCD-tablet. Being used to a retina display on my iPhone, I sometimes &lt;em&gt;feel&lt;/em&gt; like I can spot pixels on the Paperwhite display – but probably not really. Illustrations look great as long as they don&amp;#39;t depend on color.&lt;/p&gt;
+      
+      &lt;p&gt;The Paperwhite has one single button (for turning it off and on again) and a micro USB port. That&amp;#39;s it, no schnickschnack here. It doesn&amp;#39;t play MP3s, there is no dock available and it won&amp;#39;t make coffee either. &lt;a href="http://en.wikipedia.org/wiki/Amazon_Kindle#Devices"&gt;Compare with the mentioned older Kindle models&lt;/a&gt; for a good laugh.&lt;/p&gt;
+      
+      &lt;p&gt;The built-in light is perfect. It seems like the complete reading area is glowing. Acutally, imho, &lt;em&gt;the built-in light is the important thing about it.&lt;/em&gt; In a dark room, the lowest setting is just bright enough to read, without enlightening the whole room. I can read in bed again without disturbing the kids or the female.&lt;/p&gt;
+      
+      &lt;p&gt;It is a bit disappointing that the light has neither a hardware control nor automatic setting. On the other side, that makes two less possible break points.&lt;/p&gt;
+      
+      &lt;p&gt;The size of the device is exactly right, too. Anything that fits the front pocket of a zip hoodie is fit for field deployment.&lt;/p&gt;
+      
+      &lt;p&gt;Battery life keeps all the promises you hear about it. I read something around 20 to 30 hours within the first week (I caught a cold that week and read &lt;a href="http://craphound.com/makers/download/"&gt;Makers&lt;/a&gt; amongst other things) and the battery was at least still at 75% afterwards. I can only imagine what people refer to as &amp;ldquo;the insane battery life&amp;rdquo; Kindles generally have.&lt;/p&gt;
+      
+      &lt;h3&gt;Software&lt;/h3&gt;
+      
+      &lt;p&gt;Though the display does do some grayscales, it feels monochrome. That induces a nice, minimalistic touch interface: no effects, no zooming, no dancing windows. Things appear, then they disappear, without any gloss or transparency or animations. Thank god.&lt;/p&gt;
+      
+      &lt;p&gt;If you are used to snappy native iOS or Android interfaces, the eInk-display will set you in the right mood for reading a book: &lt;em&gt;patience&lt;/em&gt;. It will do its thing eventually, &lt;a href="http://www.youtube.com/watch?v=KpUNA2nutbk"&gt;just give it a second&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;The home screen consists of either a list of books or a cover gallery, sorted by last read and new. You tap them, you continue reading where you left off the last time. Awesome.&lt;/p&gt;
+      
+      &lt;p&gt;The &amp;ldquo;Beta browser&amp;rdquo; is exactly that, though if you regularly read text-heavy sites, it might be useful. Scrolling is of course the pain. This part of the touch interface (dragging a page) cannot work well due to the slowness of the eInk display.&lt;/p&gt;
+      
+      &lt;p&gt;One thing I find myself using with a lot of joy is the built in dictionaries. Just tap the word, get the definition. This is a bit like the good part of watching foreign films with subtitles.&lt;/p&gt;
+      
+      &lt;h3&gt;Stuff which is not from the Kindle shop&lt;/h3&gt;
+      
+      &lt;p&gt;The Kindle software supports &lt;a href="http://www.amazon.com/gp/help/customer/display.html?nodeId=200505520&amp;#recognize"&gt;a ridiculous range of formats&lt;/a&gt;: .txt, .mobi and (surprise) the Kindle .azw. (and PDF, more on that later.)&lt;/p&gt;
+      
+      &lt;p&gt;It gets obvious here why you would want a custom firmware (if it&amp;#39;s not enough to fully control a device you own). No html support?! No Latex-support?!&lt;/p&gt;
+      
+      &lt;p&gt;Under the hood &lt;a href="http://www.turnkeylinux.org/blog/kindle-root"&gt;the Kindle runs Linux&lt;/a&gt;, so there is really no reason, it shouldn&amp;#39;t be able to read all kinds of open standards.&lt;/p&gt;
+      
+      &lt;p&gt;However, I do not &lt;em&gt;have&lt;/em&gt; a huge collection of documents in all kinds of formats. All I want to do is read ebooks. So actually I was kind of delighted to see the Kindle mounting as normal device and sporting a simple, unhidden &lt;code&gt;documents&lt;/code&gt;-folder where all the content goes. I can copy inside it, I can copy out of it, without any restricitions. Awesome, I&amp;#39;ll do the hacking some other time.&lt;/p&gt;
+      
+      &lt;h4&gt;Managing content with Calibre&lt;/h4&gt;
+      
+      &lt;p&gt;Copying files by hand works, but there is a great open-source tool out there called &lt;a href="http://calibre-ebook.com/"&gt;Calibre&lt;/a&gt;. Since calibre changes the filenames of your ebooks, it helps to keep a consistent &amp;ldquo;workflow&amp;rdquo;:&lt;/p&gt;
+      
+      &lt;ul&gt;
+      &lt;li&gt;buy&lt;/li&gt;
+      &lt;li&gt;download&lt;/li&gt;
+      &lt;li&gt;dedrm&lt;/li&gt;
+      &lt;li&gt;put into library&lt;/li&gt;
+      &lt;li&gt;edit metadata&lt;/li&gt;
+      &lt;li&gt;sync to kindle&lt;/li&gt;
+      &lt;li&gt;read&lt;/li&gt;
+      &lt;/ul&gt;
+      
+      &lt;p&gt;Calibre does not care about the kindles &lt;code&gt;.sdr&lt;/code&gt; files which store your marks and note, so those have to be synced manually if needed.&lt;/p&gt;
+      
+      &lt;p&gt;Calibre also provides you with a special goodie: converting &lt;code&gt;.epub&lt;/code&gt; (which the Kindle refuses) to &lt;code&gt;.mobi&lt;/code&gt; (which the Kindle accepts).&lt;/p&gt;
+      
+      &lt;h4&gt;PDFs&lt;/h4&gt;
+      
+      &lt;p&gt;PDF does really show its ugly side on the Kindle. If the author didn&amp;#39;t have a paperback-sized format in mind, text will probably be unreadable, despite the high resolution of the display. Zooming is not really an option either because turning pages and moving within one page breaks your reading flow. Many PDFs come with a thick white margin, too.&lt;/p&gt;
+      
+      &lt;p&gt;Sometimes switching to landscape mode can be enough to wade through the pages. But once you read a book in a dynamic format, PDFs feel sluggish and yesterday.&lt;/p&gt;
+      
+      &lt;p&gt;After being somewhat disappointed I deleted the collection of PDF ebooks I accumulated over the years and understand now what they mean when they say:&lt;/p&gt;
+      
+      &lt;blockquote&gt;
+      &lt;p&gt;PDF is not an ebook format!&lt;/p&gt;
+      &lt;/blockquote&gt;
+      
+      &lt;p&gt;The point is not if a particular PDF is accidentally readable on this or that device. Ebooks should be dynamic by design, like HTML. PDF is by design a static format, made to get consistent output on print.&lt;/p&gt;
+      
+      &lt;h3&gt;Hackability&lt;/h3&gt;
+      
+      &lt;p&gt;As said, I will root the device some other time, so I cannot give hints on where to start &lt;a href="https://www.google.com/#hl=de&amp;safe=off&amp;tbo=d&amp;sclient=psy-ab&amp;q=rooting+the+kindle+paperwhite&amp;oq=rooting+the+kindle+paperwhite&amp;gs_l=hp.3..0i19.1368.8401.0.8706.29.10.0.18.18.0.349.1018.8j1j0j1.10.0...0.0...1c.1.2.hp.nYVFMfn_56M&amp;pbx=1&amp;bav=on.2,or.r_gc.r_pw.r_qf.&amp;bvm=bv.42080656,d.d2k&amp;fp=fb64fd9fed45682e&amp;biw=1199&amp;bih=737"&gt;that journey&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;&lt;a href="http://apprenticealf.wordpress.com/2012/09/10/drm-removal-tools-for-ebooks/"&gt;Hacking the Kindle-DRM&lt;/a&gt; is actually not that hard, since everything is stored in the mentioned documents-folder. If you wonder &lt;em&gt;why&lt;/em&gt; you should hack the DRM, have a look at the &lt;a href="http://www.defectivebydesign.org/"&gt;Defective by Design&lt;/a&gt;-campaing by the &lt;a href="http://www.fsf.org/"&gt;Free Software Foundation&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;h3&gt;Use cases&lt;/h3&gt;
+      
+      &lt;p&gt;Besides &amp;ldquo;consuming text&amp;rdquo;? Well, &lt;em&gt;learning&lt;/em&gt; from book-exercises or tutorials is a breeze with this thing, much more comfortable than handling large paper bricks.&lt;/p&gt;
+      
+      &lt;p&gt;Which brings me to a personal use case: I start books, then start other books. I read mostly non-fiction and imho &amp;ldquo;80% of all non-fiction writing could be edited down to 20% of the size while keeping 80% of the relevant information&amp;rdquo;.&lt;/p&gt;
+      
+      &lt;p&gt;So after a third or half of a book I usually need a break from all the… &lt;em&gt;writing…&lt;/em&gt;  &lt;em&gt;all the writing these authors must do all the time…&lt;/em&gt; and switch to something else for now. With this thingy I can continue any started book any time.&lt;/p&gt;
+      
+      &lt;p&gt;Another thing is the reading of text-heavy content from the web. &lt;a href="http://david-smith.org/blog/2012/10/11/instapaper-on-the-kindle-paperwhite/"&gt;Syncing the Kindle with Instapaper&lt;/a&gt; is not exactly straightforward, but it works.&lt;/p&gt;
+      
+      &lt;p&gt;The touch interface is also very grateful for marking takeaways and quotes directly in the text. Adding notes is somewhat tideous, again due to the lag of the display. It works to to add a couple keywords so you will remember your thought, but it is not made for typing. On the upside, you will find a simple text-file in the document folder called &amp;ldquo;clipboard&amp;rdquo;, which has all your marked passages and notes you added. Writing book reviews should be much more fun this way, I will probably try that out one day.&lt;/p&gt;
+      
+      &lt;h3&gt;Verdict&lt;/h3&gt;
+      
+      &lt;p&gt;A device dedicated to read books, anytime, anywhere, independently of external light or, yes, &amp;ldquo;even in direct sunlight&amp;rdquo;. Won&amp;#39;t distract you with games or productivity apps from reading books.&lt;/p&gt;
+      
+      &lt;p&gt;Reading books is how I spent a lot of my life and I am happy to &lt;em&gt;finally&lt;/em&gt; bring that part of me over to the present, &lt;a href="http://en.wikipedia.org/wiki/Gutenberg_Bible"&gt;after 500 years&lt;/a&gt;. Reading on the eInk display is bliss as it is, but the built-in light made it my new best friend. I actually &lt;em&gt;do&lt;/em&gt; carry it around in my hoodie pocket at home.&lt;/p&gt;
+      </content>
+        </entry>
+        <entry>
+          <title>Converting FLAC to Apple Lossless without the hassle</title>
+          <link rel="alternate" href="/2013/03/30/converting-flac-to-apple-lossless-without-the-hassle.html"/>
+          <id>/2013/03/30/converting-flac-to-apple-lossless-without-the-hassle.html</id>
+          <published>2013-03-30T08:35:00Z</published>
+          <updated>2013-03-30T08:35:00Z</updated>
+          <author>
+            <name>filtercake</name>
+          </author>
+          <content type="html">&lt;p&gt;The problem:&lt;/p&gt;
+      
+      &lt;ol&gt;
+      &lt;li&gt;when I can choose between different audio formats to download, I prefer lossless to lossy (duh).&lt;/li&gt;
+      &lt;li&gt;the de-facto standard for lossless audio is &lt;a href="http://en.wikipedia.org/wiki/Flac"&gt;FLAC&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;I am an inhabitant of Apple&amp;#39;s iTunes/iPod/iPhone Garden Eden – and of course Apple refuses FLAC and instead cooked up their own lossless format, &lt;a href="http://en.wikipedia.org/wiki/Alac"&gt;ALAC&lt;/a&gt;, which resides in &lt;code&gt;.mp4&lt;/code&gt; container files.&lt;/li&gt;
+      &lt;/ol&gt;
+      
+      &lt;p&gt;So every time I get hold of music in FLAC, I need to convert it to ALAC before I can throw it into iTunes. On average, &lt;a href="https://www.google.de/search?q=mac+convert+flac+to+alac&amp;hl=de&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=qPZNUfznM4n6PNaggPgO&amp;ved=0CAcQ_AUoAQ&amp;biw=1095&amp;bih=726"&gt;UIs for small apps like these are horrible&lt;/a&gt;, so I&amp;#39;d prefer to have a Bash-script available for that.&lt;/p&gt;
+      
+      &lt;p&gt;First of all, the code is from &lt;a href="http://avp.stackexchange.com/questions/1139/free-batch-conversion-from-flac-to-apple-lossless-alac"&gt;an answer at AVP Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;Using &lt;a href="http://mxcl.github.com/homebrew/"&gt;Homebrew&lt;/a&gt;, we install &lt;a href="http://ffmpeg.org/"&gt;ffmpeg&lt;/a&gt;:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;$ brew update
+      $ brew install ffmpeg
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;I recommend sporting a &lt;code&gt;scripts&lt;/code&gt; directory in the home folder, which is added to the &lt;a href="http://en.wikipedia.org/wiki/PATH_(variable)"&gt;PATH&lt;/a&gt;. We want to have a script there called &lt;code&gt;flac2alac.sh&lt;/code&gt; which does the conversion whereever we have some FLAC files.&lt;/p&gt;
+      
+      &lt;p&gt;So:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;$ cd ~/scripts
+      $ touch flac2alac.sh     # genereates an empty file
+      $ chmod +x flac2alac.sh  # makes it executable
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;Then one edits that file in a text editor of choice and puts inside:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;    #!/bin/bash
+      for f in *.flac; do ffmpeg -i &amp;quot;$f&amp;quot; -c:a alac &amp;quot;${f%.flac}.m4a&amp;quot;; done
+      # see http://avp.stackexchange.com/questions/1139/free-batch-conversion-from-flac-to-apple-lossless-alac and POST URL
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;What does this code do?&lt;/p&gt;
+      
+      &lt;blockquote&gt;
+      &lt;p&gt;This will simply cycle through all the .flac files sitting in the current directory and convert them all to .alac until they&amp;#39;re all done.&lt;/p&gt;
+      
+      &lt;p&gt;&lt;a href="http://avp.stackexchange.com/questions/1139/free-batch-conversion-from-flac-to-apple-lossless-alac"&gt;http://avp.stackexchange.com/questions/1139/free-batch-conversion-from-flac-to-apple-lossless-alac&lt;/a&gt;&lt;/p&gt;
+      &lt;/blockquote&gt;
+      
+      &lt;p&gt;Done. Example?&lt;/p&gt;
+      
+      &lt;p&gt;Lets say you have a folder called &lt;code&gt;100-Million-Bon-Jovi-Fans-cant-be-wrong&lt;/code&gt; filled all the bestest music in flac files. Do&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;$ cd ~/Downloads/100-Million-Bon-Jovi-Fans-cant-be-wrong
+      $ flac2alac.sh
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;Et voila.&lt;/p&gt;
+      
+      &lt;h2&gt;Troubleshooting:&lt;/h2&gt;
+      
+      &lt;ul&gt;
+      &lt;li&gt;does &lt;code&gt;flac2alac.sh&lt;/code&gt; exist?&lt;/li&gt;
+      &lt;li&gt;is it executable?&lt;/li&gt;
+      &lt;li&gt;is it in &lt;code&gt;~/scripts&lt;/code&gt;?&lt;/li&gt;
+      &lt;li&gt;is &lt;code&gt;~/scripts&lt;/code&gt; part of the &lt;code&gt;PATH&lt;/code&gt;?&lt;/li&gt;
+      &lt;li&gt;did you open a fresh terminal window after editing &lt;code&gt;PATH&lt;/code&gt;?&lt;/li&gt;
+      &lt;/ul&gt;
+      </content>
+        </entry>
+      </feed>
+    </div>
+    <div class='clear'></div>
+    <footer>
+      <p>
+        <a href="http://github.com/filtercake/ayanami">Ayanami</a>
+        template for
+        <a href="http://middlemanapp.com/">Middleman</a>
+        created by
+        <a href="http://filtercake.com/">filtercake</a>
+        . Powered by
+        <a href="http://pages.github.com/">Github pages</a>
+        ,
+        <a href="http://compass-style.org/">Compass</a>
+        ,
+        <a href="http://haml.info/">HAML</a>
+         and
+        <a href="http://sass-lang.com/">SASS</a>
+        . All content unless otherwise noted or sourced CC BY-NC-ND. &copy; Fabian Fabian
+      </p>
+    </footer>
+    <!-- %header -->
+    <!-- = partial '/partials/header' -->
+  </body>
+  <script src="/assets/javascripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="/assets/javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <!-- "jquery.scrollTo.js", "jquery.nav.js" -->
+  <script>
+    $(document).ready(function() {
+    $('.fancybox').fancybox();
+    });
+  </script>
+  <!-- %script -->
+  <!-- $('#nav').onePageNav({ -->
+  <!-- currentClass: 'current', -->
+  <!-- changeHash: true, -->
+  <!-- scrollSpeed: 750, -->
+  <!-- scrollOffset: 30, -->
+  <!-- scrollThreshold: 0.5, -->
+  <!-- filter: '', -->
+  <!-- easing: 'swing', -->
+  <!-- begin: function() { -->
+  <!-- //I get fired when the animation is starting -->
+  <!-- }, -->
+  <!-- end: function() { -->
+  <!-- //I get fired when the animation is ending -->
+  <!-- } -->
+  <!-- }); -->
+  <!-- / %script{ :src => "d3.v2.js" } -->
+  <!-- / %script{ :src => "stack.v0.js" } -->
+</html>

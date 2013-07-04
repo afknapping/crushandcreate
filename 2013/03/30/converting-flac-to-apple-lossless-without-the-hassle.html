@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+      <!-- Always force latest IE rendering engine or request Chrome Frame -->
+      <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+      <!-- Use title if it's in the page YAML frontmatter -->
+      <!-- %title= data.page.title || "The Middleman" -->
+      <!-- this currently gives an error and outputs the last post -->
+      <title>crushandcreate</title>
+      <meta content='width=device-width' name='viewport'>
+      <link href="/assets/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+      <link href='/blog-bricks/feed.xml' rel='alternate' type='application/rss+xml'>
+    </meta>
+  </head>
+  <body class='2013 2013_03 2013_03_30 2013_03_30_converting-flac-to-apple-lossless-without-the-hassle'>
+    <nav>
+      <ul>
+        <li>
+          <a href='/'>
+            <img id='logo' src='/content/images/avatar.jpg'>
+          </a>
+        </li>
+        <li>
+          <a href='/'>Crush and Create</a>.
+          A blog by
+          <a href='http://filtercake.com'>filtercake</a>.
+        </li>
+        <br>
+        <li>
+          <a href='/pages/about.html'>
+            About
+          </a>
+        </li>
+        <!-- \| -->
+        <!-- %li -->
+        <!-- %a{ :href => '/pages/archive.html'} archive -->
+      </ul>
+    </nav>
+    <div id='navspacer'></div>
+    <div class='post'>
+      <h1 class='post'>
+        <a href="/2013/03/30/converting-flac-to-apple-lossless-without-the-hassle.html">Converting FLAC to Apple Lossless without the hassle</a>
+      </h1>
+      <time datetime='2013-03-30 08:35:00 UTC' pubtime=''>
+        Posted
+        <a href="/2013/03/30/converting-flac-to-apple-lossless-without-the-hassle.html">Mar 30</a>
+      </time>
+      <p>The problem:</p>
+      
+      <ol>
+      <li>when I can choose between different audio formats to download, I prefer lossless to lossy (duh).</li>
+      <li>the de-facto standard for lossless audio is <a href="http://en.wikipedia.org/wiki/Flac">FLAC</a>.</li>
+      <li>I am an inhabitant of Apple&#39;s iTunes/iPod/iPhone Garden Eden – and of course Apple refuses FLAC and instead cooked up their own lossless format, <a href="http://en.wikipedia.org/wiki/Alac">ALAC</a>, which resides in <code>.mp4</code> container files.</li>
+      </ol>
+      
+      <p>So every time I get hold of music in FLAC, I need to convert it to ALAC before I can throw it into iTunes. On average, <a href="https://www.google.de/search?q=mac+convert+flac+to+alac&hl=de&source=lnms&tbm=isch&sa=X&ei=qPZNUfznM4n6PNaggPgO&ved=0CAcQ_AUoAQ&biw=1095&bih=726">UIs for small apps like these are horrible</a>, so I&#39;d prefer to have a Bash-script available for that.</p>
+      
+      <p>First of all, the code is from <a href="http://avp.stackexchange.com/questions/1139/free-batch-conversion-from-flac-to-apple-lossless-alac">an answer at AVP Stack Overflow</a>.</p>
+      
+      <p>Using <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, we install <a href="http://ffmpeg.org/">ffmpeg</a>:</p>
+      
+      <pre><code>$ brew update
+      $ brew install ffmpeg
+      </code></pre>
+      
+      <p>I recommend sporting a <code>scripts</code> directory in the home folder, which is added to the <a href="http://en.wikipedia.org/wiki/PATH_(variable)">PATH</a>. We want to have a script there called <code>flac2alac.sh</code> which does the conversion whereever we have some FLAC files.</p>
+      
+      <p>So:</p>
+      
+      <pre><code>$ cd ~/scripts
+      $ touch flac2alac.sh     # genereates an empty file
+      $ chmod +x flac2alac.sh  # makes it executable
+      </code></pre>
+      
+      <p>Then one edits that file in a text editor of choice and puts inside:</p>
+      
+      <pre><code>    #!/bin/bash
+      for f in *.flac; do ffmpeg -i &quot;$f&quot; -c:a alac &quot;${f%.flac}.m4a&quot;; done
+      # see http://avp.stackexchange.com/questions/1139/free-batch-conversion-from-flac-to-apple-lossless-alac and POST URL
+      </code></pre>
+      
+      <p>What does this code do?</p>
+      
+      <blockquote>
+      <p>This will simply cycle through all the .flac files sitting in the current directory and convert them all to .alac until they&#39;re all done.</p>
+      
+      <p><a href="http://avp.stackexchange.com/questions/1139/free-batch-conversion-from-flac-to-apple-lossless-alac">http://avp.stackexchange.com/questions/1139/free-batch-conversion-from-flac-to-apple-lossless-alac</a></p>
+      </blockquote>
+      
+      <p>Done. Example?</p>
+      
+      <p>Lets say you have a folder called <code>100-Million-Bon-Jovi-Fans-cant-be-wrong</code> filled all the bestest music in flac files. Do</p>
+      
+      <pre><code>$ cd ~/Downloads/100-Million-Bon-Jovi-Fans-cant-be-wrong
+      $ flac2alac.sh
+      </code></pre>
+      
+      <p>Et voila.</p>
+      
+      <h2>Troubleshooting:</h2>
+      
+      <ul>
+      <li>does <code>flac2alac.sh</code> exist?</li>
+      <li>is it executable?</li>
+      <li>is it in <code>~/scripts</code>?</li>
+      <li>is <code>~/scripts</code> part of the <code>PATH</code>?</li>
+      <li>did you open a fresh terminal window after editing <code>PATH</code>?</li>
+      </ul>
+      <div class='author'>
+        <p>
+          This was written by
+          <a href='http://filtercake.com'>
+            filtercake
+          </a>
+          . Say hi on
+          <a href='http://twitter.com/filtercake'>
+            twitter
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div class='clear'></div>
+    <footer>
+      <p>
+        <a href="http://github.com/filtercake/ayanami">Ayanami</a>
+        template for
+        <a href="http://middlemanapp.com/">Middleman</a>
+        created by
+        <a href="http://filtercake.com/">filtercake</a>
+        . Powered by
+        <a href="http://pages.github.com/">Github pages</a>
+        ,
+        <a href="http://compass-style.org/">Compass</a>
+        ,
+        <a href="http://haml.info/">HAML</a>
+         and
+        <a href="http://sass-lang.com/">SASS</a>
+        . All content unless otherwise noted or sourced CC BY-NC-ND. &copy; Fabian Fabian
+      </p>
+    </footer>
+    <!-- %header -->
+    <!-- = partial '/partials/header' -->
+  </body>
+  <script src="/assets/javascripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="/assets/javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <!-- "jquery.scrollTo.js", "jquery.nav.js" -->
+  <script>
+    $(document).ready(function() {
+    $('.fancybox').fancybox();
+    });
+  </script>
+  <!-- %script -->
+  <!-- $('#nav').onePageNav({ -->
+  <!-- currentClass: 'current', -->
+  <!-- changeHash: true, -->
+  <!-- scrollSpeed: 750, -->
+  <!-- scrollOffset: 30, -->
+  <!-- scrollThreshold: 0.5, -->
+  <!-- filter: '', -->
+  <!-- easing: 'swing', -->
+  <!-- begin: function() { -->
+  <!-- //I get fired when the animation is starting -->
+  <!-- }, -->
+  <!-- end: function() { -->
+  <!-- //I get fired when the animation is ending -->
+  <!-- } -->
+  <!-- }); -->
+  <!-- / %script{ :src => "d3.v2.js" } -->
+  <!-- / %script{ :src => "stack.v0.js" } -->
+</html>
