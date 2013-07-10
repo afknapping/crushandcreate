@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+      <!-- Always force latest IE rendering engine or request Chrome Frame -->
+      <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+      <!-- Use title if it's in the page YAML frontmatter -->
+      <!-- %title= data.page.title || "The Middleman" -->
+      <!-- this currently gives an error and outputs the last post -->
+      <title>crushandcreate</title>
+      <meta content='width=device-width' name='viewport'>
+      <link href="/assets/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+      <link href='/blog-bricks/feed.xml' rel='alternate' type='application/rss+xml'>
+    </meta>
+  </head>
+  <body class='2013 2013_07 2013_07_10 2013_07_10_your-mother-is-responsive'>
+    <nav>
+      <ul>
+        <li>
+          <a href='/'>
+            <img id='logo' src='/content/images/avatar.jpg'>
+          </a>
+        </li>
+        <li>
+          <a href='/'>Crush and Create</a>.
+          A blog by
+          <a href='http://filtercake.com'>filtercake</a>.
+        </li>
+        <br>
+        <li>
+          <a href='/pages/about.html'>
+            About
+          </a>
+        </li>
+        <!-- \| -->
+        <!-- %li -->
+        <!-- %a{ :href => '/pages/archive.html'} archive -->
+      </ul>
+    </nav>
+    <div id='navspacer'></div>
+    <div class='post'>
+      <!-- image post -->
+      <!-- link post -->
+      <!-- text post -->
+      <h1 class='post'>
+        <a href="/2013/07/10/your-mother-is-responsive.html">Your mother is responsive</a>
+      </h1>
+      <time datetime='2013-07-10 19:54:00 UTC' pubtime=''>
+        Posted
+        <a href="/2013/07/10/your-mother-is-responsive.html">Jul 10</a>
+      </time>
+      <h2>She is not so adaptive, though.</h2>
+      
+      <blockquote>
+      <p><strong>a·dap·tive</strong>, adjective</p>
+      
+      <p>serving or able to adapt; showing or contributing to adaptation. </p>
+      
+      <p><strong>a·dapt</strong>, verb</p>
+      
+      <p>to make suitable to requirements or conditions; adjust or modify fittingly. to adjust oneself to different conditions, environment, etc.</p>
+      </blockquote>
+      
+      <hr>
+      
+      <blockquote>
+      <p><strong>re·spon·sive</strong>, adjective</p>
+      
+      <p>responding especially readily and sympathetically to appeals, efforts, influences. acting in response, as to some stimulus.</p>
+      
+      <p><strong>re·spond</strong>, verb</p>
+      
+      <p>to reply or answer in words: to respond briefly. to make a return by some action. to react favorably. to exhibit some action or effect.</p>
+      </blockquote>
+      
+      <p>To paraphrase: adaption is more about reacting to circumstances (read: <strong>context</strong>). Response is more about reacting to <strong>events</strong>.</p>
+      
+      <p>Now these terms are currently overused and buzzed out in the mobile world and, afaik, some people have very specific opinions about what means what while a lot of people are just blabbering about it to ensure marketing budgets.</p>
+      
+      <p>Fact is: the web has always been responsive. You can specify element dimensions in relative units: <code>percent</code> and <code>em</code> for example (and recently also in <a href="http://css-tricks.com/theres-more-to-the-css-rem-unit-than-font-sizing/"><code>rem</code></a>. They mean different things. Percentage looks at the next <em>higher</em> context (device, viewport, parent element) while em looks at the next <em>smaller</em> context (text-size attribute of content within element).</p>
+      
+      <h2>Enter Designers</h2>
+      
+      <p>Before the web, we did hundreds of years of print design (actually thousands, print design didn&#39;t start with the printing press). We are used to <em>exactly</em> placing things <em>in a static, absolute context</em> (the sheet of paper, a wall, any other surface). These were always real world things, so they had absolute dimensions by design.</p>
+      
+      <p>So what did we do? We started misusing tables. Tables originally were also <em>responsive by design, visually aligning related data automagically</em>. But hey, why not put some shackles on them to <em>arbitrarily create a static sheet with absolute dimensions</em>. Oh boy. It&#39;s not our fault though. Of course marketing made us do it.</p>
+      
+      <p>So first we destroyed the responsive web. And now we are busy shooting ourselves through the chest &ldquo;repairing&rdquo; it. Have you noticed that Bootstrap 3.0 is still pixel-based?</p>
+      
+      <p><img src="https://dl.dropboxusercontent.com/s/dk5iowf3zkc4oow/2013-07-10%20at%2022.06.png" /></p>
+      
+      <p>To keep our beloved absolute pixels we are now creating multiple special cases, each of them static. Then we add logic on top in the form of media queries, to simulate responsiveness by mappping those static cases to our context in more or less rude steps. Yuck!</p>
+      
+      <p>What I still cannot do in CSS3 is specify the dimensions of an element as a simple ratio which always stays the same independently from absolute dimensions. Like this:</p>
+      
+      <pre><code>.cinemascope {
+        width-height-ratio: 2.35;
+        width: 100%;
+      }
+      </code></pre>
+      
+      <p>Noticed how &ldquo;light&rdquo; as medium is dynamic and filmmakers never got the idea to specify their formats in nonsense like &ldquo;100cm wide and 42cm high&rdquo;?</p>
+      
+      <p>Every designer knows that visual design is a lot about relations (context) and ratios because perception is always relative. And <a href="http://www.hicksdesign.co.uk/journal/design-is-just-making-things-line-up">design is just making things line up</a>, anyways.</p>
+      
+      <p>My point is: if you are not thinking responsive (reacting to context and content) you are not thinking web. Mobile just made that so much more obvious. So let&#39;s stop using pixels. They are useless with an evergrowing list of viewport sizes and densities.</p>
+      
+      <blockquote class="twitter-tweet"><p>Default designer&#39;s tombstone: MARKETING MADE ME DO IT.</p>&mdash; Fabian Fabian (@filtercake) <a href="https://twitter.com/filtercake/statuses/355033227200708608">July 10, 2013</a></blockquote>
+      
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class='author'>
+        <p>
+          This was written by
+          <a href='http://filtercake.com'>
+            filtercake
+          </a>
+          . Say hi on
+          <a href='http://twitter.com/filtercake'>
+            twitter
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div class='clear'></div>
+    <footer>
+      <p>
+        <a href="http://github.com/filtercake/ayanami">Ayanami</a>
+        template for
+        <a href="http://middlemanapp.com/">Middleman</a>
+        created by
+        <a href="http://filtercake.com/">filtercake</a>
+        . Powered by
+        <a href="http://pages.github.com/">Github pages</a>
+        ,
+        <a href="http://compass-style.org/">Compass</a>
+        ,
+        <a href="http://haml.info/">HAML</a>
+         and
+        <a href="http://sass-lang.com/">SASS</a>
+        . All content unless otherwise noted or sourced CC BY-NC-ND. &copy; Fabian Fabian
+      </p>
+    </footer>
+    <!-- %header -->
+    <!-- = partial '/partials/header' -->
+  </body>
+  <script src="/assets/javascripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="/assets/javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <!-- "jquery.scrollTo.js", "jquery.nav.js" -->
+  <script>
+    $(document).ready(function() {
+    $('.fancybox').fancybox();
+    });
+  </script>
+  <!-- %script -->
+  <!-- $('#nav').onePageNav({ -->
+  <!-- currentClass: 'current', -->
+  <!-- changeHash: true, -->
+  <!-- scrollSpeed: 750, -->
+  <!-- scrollOffset: 30, -->
+  <!-- scrollThreshold: 0.5, -->
+  <!-- filter: '', -->
+  <!-- easing: 'swing', -->
+  <!-- begin: function() { -->
+  <!-- //I get fired when the animation is starting -->
+  <!-- }, -->
+  <!-- end: function() { -->
+  <!-- //I get fired when the animation is ending -->
+  <!-- } -->
+  <!-- }); -->
+  <!-- / %script{ :src => "d3.v2.js" } -->
+  <!-- / %script{ :src => "stack.v0.js" } -->
+</html>

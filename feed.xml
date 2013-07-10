@@ -46,10 +46,80 @@
         <id>http://crushandcreate.com/</id>
         <link href="http://crushandcreate.com/"/>
         <link href="/feed.xml" rel="self"/>
-        <updated>2013-05-12T14:33:00Z</updated>
+        <updated>2013-07-10T19:54:00Z</updated>
         <author>
           <name>filtercake</name>
         </author>
+        <entry>
+          <title>Your mother is responsive</title>
+          <link rel="alternate" href="/2013/07/10/your-mother-is-responsive.html"/>
+          <id>/2013/07/10/your-mother-is-responsive.html</id>
+          <published>2013-07-10T19:54:00Z</published>
+          <updated>2013-07-10T19:54:00Z</updated>
+          <author>
+            <name>filtercake</name>
+          </author>
+          <content type="html">&lt;h2&gt;She is not so adaptive, though.&lt;/h2&gt;
+      
+      &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;a·dap·tive&lt;/strong&gt;, adjective&lt;/p&gt;
+      
+      &lt;p&gt;serving or able to adapt; showing or contributing to adaptation. &lt;/p&gt;
+      
+      &lt;p&gt;&lt;strong&gt;a·dapt&lt;/strong&gt;, verb&lt;/p&gt;
+      
+      &lt;p&gt;to make suitable to requirements or conditions; adjust or modify fittingly. to adjust oneself to different conditions, environment, etc.&lt;/p&gt;
+      &lt;/blockquote&gt;
+      
+      &lt;hr&gt;
+      
+      &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;re·spon·sive&lt;/strong&gt;, adjective&lt;/p&gt;
+      
+      &lt;p&gt;responding especially readily and sympathetically to appeals, efforts, influences. acting in response, as to some stimulus.&lt;/p&gt;
+      
+      &lt;p&gt;&lt;strong&gt;re·spond&lt;/strong&gt;, verb&lt;/p&gt;
+      
+      &lt;p&gt;to reply or answer in words: to respond briefly. to make a return by some action. to react favorably. to exhibit some action or effect.&lt;/p&gt;
+      &lt;/blockquote&gt;
+      
+      &lt;p&gt;To paraphrase: adaption is more about reacting to circumstances (read: &lt;strong&gt;context&lt;/strong&gt;). Response is more about reacting to &lt;strong&gt;events&lt;/strong&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;Now these terms are currently overused and buzzed out in the mobile world and, afaik, some people have very specific opinions about what means what while a lot of people are just blabbering about it to ensure marketing budgets.&lt;/p&gt;
+      
+      &lt;p&gt;Fact is: the web has always been responsive. You can specify element dimensions in relative units: &lt;code&gt;percent&lt;/code&gt; and &lt;code&gt;em&lt;/code&gt; for example (and recently also in &lt;a href="http://css-tricks.com/theres-more-to-the-css-rem-unit-than-font-sizing/"&gt;&lt;code&gt;rem&lt;/code&gt;&lt;/a&gt;. They mean different things. Percentage looks at the next &lt;em&gt;higher&lt;/em&gt; context (device, viewport, parent element) while em looks at the next &lt;em&gt;smaller&lt;/em&gt; context (text-size attribute of content within element).&lt;/p&gt;
+      
+      &lt;h2&gt;Enter Designers&lt;/h2&gt;
+      
+      &lt;p&gt;Before the web, we did hundreds of years of print design (actually thousands, print design didn&amp;#39;t start with the printing press). We are used to &lt;em&gt;exactly&lt;/em&gt; placing things &lt;em&gt;in a static, absolute context&lt;/em&gt; (the sheet of paper, a wall, any other surface). These were always real world things, so they had absolute dimensions by design.&lt;/p&gt;
+      
+      &lt;p&gt;So what did we do? We started misusing tables. Tables originally were also &lt;em&gt;responsive by design, visually aligning related data automagically&lt;/em&gt;. But hey, why not put some shackles on them to &lt;em&gt;arbitrarily create a static sheet with absolute dimensions&lt;/em&gt;. Oh boy. It&amp;#39;s not our fault though. Of course marketing made us do it.&lt;/p&gt;
+      
+      &lt;p&gt;So first we destroyed the responsive web. And now we are busy shooting ourselves through the chest &amp;ldquo;repairing&amp;rdquo; it. Have you noticed that Bootstrap 3.0 is still pixel-based?&lt;/p&gt;
+      
+      &lt;p&gt;&lt;img src="https://dl.dropboxusercontent.com/s/dk5iowf3zkc4oow/2013-07-10%20at%2022.06.png" /&gt;&lt;/p&gt;
+      
+      &lt;p&gt;To keep our beloved absolute pixels we are now creating multiple special cases, each of them static. Then we add logic on top in the form of media queries, to simulate responsiveness by mappping those static cases to our context in more or less rude steps. Yuck!&lt;/p&gt;
+      
+      &lt;p&gt;What I still cannot do in CSS3 is specify the dimensions of an element as a simple ratio which always stays the same independently from absolute dimensions. Like this:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;.cinemascope {
+        width-height-ratio: 2.35;
+        width: 100%;
+      }
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;Noticed how &amp;ldquo;light&amp;rdquo; as medium is dynamic and filmmakers never got the idea to specify their formats in nonsense like &amp;ldquo;100cm wide and 42cm high&amp;rdquo;?&lt;/p&gt;
+      
+      &lt;p&gt;Every designer knows that visual design is a lot about relations (context) and ratios because perception is always relative. And &lt;a href="http://www.hicksdesign.co.uk/journal/design-is-just-making-things-line-up"&gt;design is just making things line up&lt;/a&gt;, anyways.&lt;/p&gt;
+      
+      &lt;p&gt;My point is: if you are not thinking responsive (reacting to context and content) you are not thinking web. Mobile just made that so much more obvious. So let&amp;#39;s stop using pixels. They are useless with an evergrowing list of viewport sizes and densities.&lt;/p&gt;
+      
+      &lt;blockquote class="twitter-tweet"&gt;&lt;p&gt;Default designer&amp;#39;s tombstone: MARKETING MADE ME DO IT.&lt;/p&gt;&amp;mdash; Fabian Fabian (@filtercake) &lt;a href="https://twitter.com/filtercake/statuses/355033227200708608"&gt;July 10, 2013&lt;/a&gt;&lt;/blockquote&gt;
+      
+      &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+      </content>
+        </entry>
         <entry>
           <title>Why I am not programming since I was 9</title>
           <link rel="alternate" href="/2013/05/12/why-i-am-not-programming-since-i-was-9.html"/>

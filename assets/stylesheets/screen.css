@@ -535,7 +535,7 @@ p, ul, ol, li, table, h1, h2, h3, h4, h5, h6, blockquote, img, iframe, embed, ob
   margin-bottom: 1.4em;
   line-height: 1.4em; }
 
-/* line 24, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_typo-basics.sass */
+/* line 23, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_typo-basics.sass */
 blockquote {
   padding-left: 1.4em;
   border-left: 3px solid gray; }
@@ -581,24 +581,25 @@ h1.link {
 
 /* line 30, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
 h1.post {
-  font-size: 2em; }
+  font-size: 2em;
+  line-height: 0.93333em; }
 
-/* line 32, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+/* line 33, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
 time {
   font-size: 0.8em;
   display: block;
   text-align: right; }
 
-/* line 38, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+/* line 39, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
 .post time {
   position: relative;
   top: -2.8em; }
 
-/* line 41, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+/* line 42, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
 li {
   list-style-type: square; }
 
-/* line 44, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+/* line 45, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
 pre {
   white-space: pre-line;
   max-width: 100%;
@@ -613,43 +614,42 @@ pre {
   border-radius: 5px;
   margin-bottom: 1.4em; }
 
-/* line 57, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
-.post h2 {
-  font-size: 1.4em; }
-
-/* line 60, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
-a {
-  color: black; }
-
-/* line 62, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
-a:hover {
-  color: #a20000; }
-
-/* line 66, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
-h1 a {
-  color: #a20000;
-  text-decoration: none; }
-
-/* line 73, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
-footer, .author {
-  border-top: 1px solid gray;
-  font-size: 0.6em; }
-
-/* line 77, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
-pre {
-  white-space: pre-line;
-  margin-bottom: 1.4em; }
-
-/* line 81, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+/* line 58, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
 code {
   font-size: 0.8em;
   color: #a20000; }
 
-/* line 85, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+/* line 63, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+.post h2 {
+  font-size: 1.4em; }
+
+/* line 66, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+.post h3 {
+  font-size: 1.2em; }
+
+/* line 69, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+a {
+  color: black; }
+
+/* line 71, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+a:hover {
+  color: #a20000; }
+
+/* line 75, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+h1 a {
+  color: #a20000;
+  text-decoration: none; }
+
+/* line 82, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+footer, .author {
+  border-top: 1px solid gray;
+  font-size: 0.6em; }
+
+/* line 86, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
 blockquote a:last-child {
   font-size: 0.6em; }
 
-/* line 88, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
+/* line 89, /Users/fabianfabian/projects/crushandcreate/source/assets/stylesheets/gestalt/_sketchbook.sass */
 .imagesource {
   font-size: 0.6em; }
 
